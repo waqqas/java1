@@ -9,7 +9,5 @@ services:
       - ./webapps:/usr/local/tomcat/webapps:cached
     ports:
       - "8080:8080"
-    env_file:
-      - .env
     command: sleep infinity
     working_dir: /workspaces/java1
