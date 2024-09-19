@@ -21,7 +21,8 @@
 			"extensions": [
 				"sourcegraph.cody-ai",
 				"vscjava.vscode-java-pack",
-				"snehaljha.local-tomcat"
+				"snehaljha.local-tomcat",
+				"redhat.vscode-community-server-connector"
 			]
 		}
 	},

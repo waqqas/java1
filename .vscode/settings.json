@@ -17,5 +17,8 @@
             "catalinaHome": "/usr/local/tomcat",
             "deploymentPort": 8080
         }
+    ],
+    "java.project.referencedLibraries": [
+        "/usr/local/tomcat/lib/**/*.jar",
     ]
 }
