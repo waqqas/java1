@@ -5,11 +5,8 @@ import java.util.Map;
 public class UserManager {
     private Map<String, User> users;
 
-    UserManager(User[] users){
-        this.users = new HashMap<String, User>();
-        for(User user : users){
-            this.users.put(user.getEmail(), user);
-        }
+    UserManager(Map<String, User> users){
+        this.users = users;
     }
 
     UserManager(){
