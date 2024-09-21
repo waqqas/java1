@@ -22,7 +22,9 @@
 				"sourcegraph.cody-ai",
 				"vscjava.vscode-java-pack",
 				"snehaljha.local-tomcat",
-				"redhat.vscode-community-server-connector"
+				"redhat.vscode-community-server-connector",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
