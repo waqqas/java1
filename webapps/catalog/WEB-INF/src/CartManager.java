@@ -1,4 +1,3 @@
-import java.security.InvalidParameterException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,16 +21,19 @@ public class CartManager {
     }
 
     public void addToCart(String email, CartItem item) {
+        Map<CartItem, Integer> cart;
         if (userCarts.containsKey(email)) {
-            Map<CartItem, Integer> cart = userCarts.get(email);
+            cart = userCarts.get(email);
             if (cart.containsKey(item)) {
                 cart.put(item, cart.get(item) + 1);
             } else {
                 cart.put(item, 1);
             }
         } else {
-            Map<CartItem, Integer> cart = new HashMap<CartItem, Integer>();
+            cart = new HashMap<CartItem, Integer>();
             cart.put(item, 1);
         }
+        userCarts.put(email, cart);
+
     }
 }

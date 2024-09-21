@@ -12,8 +12,8 @@ import java.util.HashMap;
 
 public class DatabaseManager {
 	// Replace below paths with your full path to users.txt and carts.txt in the project database folder.
-	private final String USERS_PATH = "D:\\Documents\\apache-tomcat-9.0.64\\webapps\\catalog\\WEB-INF\\database\\users.txt";
-	private final String CARTS_PATH = "D:\\Documents\\apache-tomcat-9.0.64\\webapps\\catalog\\WEB-INF\\database\\carts.txt";
+	private final String USERS_PATH = "/workspaces/java1/webapps/catalog/WEB-INF/database/users.txt";
+	private final String CARTS_PATH = "/workspaces/java1/webapps/catalog/WEB-INF/database/carts.txt";
 
 
 	public Map<String, User> getUsers() {
