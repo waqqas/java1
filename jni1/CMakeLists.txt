@@ -19,3 +19,6 @@ set_target_properties(SubtractionFun PROPERTIES OUTPUT_NAME "SubtractionFun")
 
 # Set the library version
 set_target_properties(SubtractionFun PROPERTIES VERSION 1.0 SOVERSION 1)
+
+# Enable position independent code
+set_property(TARGET SubtractionFun PROPERTY POSITION_INDEPENDENT_CODE ON)
