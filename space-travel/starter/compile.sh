@@ -1,0 +1,2 @@
+
+javac -h . SpaceTravel.java
