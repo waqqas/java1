@@ -11,3 +11,13 @@ services:
       - "8080:8080"
     command: sleep infinity
     working_dir: /workspaces/java1
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    env_file:
+      - .env

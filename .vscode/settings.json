@@ -20,5 +20,7 @@
     ],
     "java.project.referencedLibraries": [
         "/usr/local/tomcat/lib/**/*.jar",
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cmake.sourceDirectory": "/workspaces/java1/jni1"
 }

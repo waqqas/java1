@@ -9,8 +9,13 @@
 	"service": "devcontainer",
 	"workspaceFolder": "/workspaces/java1",
 	"features": {
-		"ghcr.io/devcontainers/features/git:1": {}
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers-community/features/bazel:1": {}
 	},
+	"runServices": [
+		"zookeeper",
+		"kafka"
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.

@@ -1,0 +1,16 @@
+# build starter project
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+cc_library(
+    name = "space_travel_lib",
+    srcs = ["src/space_travel.cc"],
+    hdrs = ["include/space_travel.h"],
+    includes = ["include"],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "space_travel",
+    srcs = ["main.cc"],
+    deps = [":space_travel_lib"],
+)
